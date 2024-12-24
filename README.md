@@ -139,4 +139,4 @@ This project is licensed under the 📝 [MIT license](https://opensource.org/lic
 
 ## 📡 Connect
 
-Follow the journey on 📸 Instagram: [@jvmvl](https://instagram.com/jvmvl). Stay updated on the progress and share your feedback! 🙌
+Follow the journey on 📸 Instagram: [@chahir.dev](https://instagram.com/chahir.dev). Stay updated on the progress and share your feedback! 🙌
