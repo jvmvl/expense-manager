@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->decimal('amount', 10, 2);
             $table->date('expense_date');
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }
