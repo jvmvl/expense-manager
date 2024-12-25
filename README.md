@@ -85,8 +85,6 @@
 
 ## 🗺️ Roadmap
 
-# 🚀 100 Days Challenge: Build an Expenses and Budget Manager App
-
 ## Phase 1: Foundations (Days 1–20)
 - [x] **Day 1**: 🐘 Set up Laravel and basic routing.
 - [x] **Day 2**: 🕹️ Learn about controllers and create your first one.
@@ -98,8 +96,6 @@
 - [ ] **Day 8**: 🖼️ Set up Vue.js in your Laravel project.
 - [ ] **Day 9**: 🧩 Learn Vue.js components and structure.
 - [ ] **Day 10**: 📋 Create an expense list and add expense functionality.
-
-<!--
 - [ ] **Day 11**: ✏️ Add edit and 🗑️ delete expense features.
 - [ ] **Day 12**: 🎨 Introduce Tailwind CSS and style the frontend.
 - [ ] **Day 13**: ✅ Add client-side and server-side validation to forms.
@@ -111,7 +107,7 @@
 - [ ] **Day 19**: ⚡ Optimize database queries and use eager loading.
 - [ ] **Day 20**: 🧪 Write backend unit tests for expense management.
 
-
+<!--
 ## Phase 2: Core Features (Days 21–50)
 - [ ] **Day 21**: 🧪 Write frontend unit tests for Vue.js components.
 - [ ] **Day 22**: 🔍 Add expense search functionality.
