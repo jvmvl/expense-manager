@@ -90,8 +90,8 @@
 - [x] **Day 2**: 🕹️ Learn about controllers and create your first one.
 - [x] **Day 3**: 🗄️ Set up the database and create migrations.
 - [x] **Day 4**: 📝 Build the expense management model and CRUD operations.
-- [ ] **Day 5**: 🔐 Set up authentication (login/register) using Laravel Breeze.
-- [ ] **Day 6**: 🛡️ Learn about middleware and create custom authentication middleware.
+- [x] **Day 5**: 🔐 Set up authentication (login/register) using Laravel Breeze.
+- [x] **Day 6**: 🛡️ Learn about middleware and create custom authentication middleware.
 - [ ] **Day 7**: 🏷️ Implement user roles and permissions (optional).
 - [ ] **Day 8**: 🖼️ Set up Vue.js in your Laravel project.
 - [ ] **Day 9**: 🧩 Learn Vue.js components and structure.
