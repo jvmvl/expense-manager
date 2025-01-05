@@ -1,12 +1,23 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
+
+// Access the `auth` prop passed from Laravel
+defineProps({
+    auth: {
+        type: Object,
+        required: true,
+    }
+});
+
+// console.log(auth); // Check if the auth prop is passed correctly
+
 </script>
 
 <template>
     <Head title="Dashboard" />
 
-    <AuthenticatedLayout>
+    <AuthenticatedLayout :auth="auth">
         <template #header>
             <h2 class="text-xl font-semibold leading-tight text-gray-800">
                 Dashboard
@@ -17,14 +28,16 @@ import { Head } from '@inertiajs/vue3';
             <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                     <div class="p-6 text-gray-900">
-                        You're logged innnn!
+                        You're logged in!
                     </div>
 
-                    <h1>Hello, {{ $page.props.auth.user.name }}!</h1>
                     <p>Manage your expenses and budget here.</p>
 
                 </div>
             </div>
+
+            <pre>{{ $page.props.auth }}</pre>
+
         </div>
     </AuthenticatedLayout>
 </template>
