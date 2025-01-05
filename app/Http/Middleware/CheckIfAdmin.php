@@ -17,17 +17,17 @@ class CheckIfAdmin
      */
     public function handle(Request $request, Closure $next): Response
     {
-        if(!Auth::check()){
-            Log::info('User is not logged in');
+        // if(){
+            // Log::info('User is not logged in');
             // return redirect()->route('login');
-        }
+        // }
 
-        $is_admin = Auth::user()->is_admin ?? false;
+        $is_admin = Auth::check() && Auth::user()->is_admin ?? false;
 
         Log::info( $is_admin );
         if(!$is_admin){
             Log::info('User is not an admin');
-            // return abort(403, 'Unauthorized.');
+            return abort(403, 'Unauthorized.');
             // return redirect('/')->with('error', 'Access denied: Admins only.');
         } else {
             Log::info('User is an admin');

@@ -35,9 +35,6 @@ defineProps({
 
                 </div>
             </div>
-
-            <pre>{{ $page.props.auth }}</pre>
-
         </div>
     </AuthenticatedLayout>
 </template>
