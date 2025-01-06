@@ -2,16 +2,12 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
 
-// Access the `auth` prop passed from Laravel
 defineProps({
     auth: {
         type: Object,
         required: true,
     }
 });
-
-// console.log(auth); // Check if the auth prop is passed correctly
-
 </script>
 
 <template>

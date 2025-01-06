@@ -8,20 +8,6 @@ import ResponsiveNavLink from '@/Components/ResponsiveNavLink.vue';
 import { Link } from '@inertiajs/vue3';
 
 const showingNavigationDropdown = ref(false);
-
-// Access the `auth` prop passed from Laravel
-/*defineProps({
-    auth: {
-        type: Object,
-        required: true,
-    },
-    mounted() {
-        console.log(this.auth); // Check if the auth prop is passed correctly
-    },
-    components: {
-        AuthenticatedLayout,
-    },
-});*/
 </script>
 
 <template>
