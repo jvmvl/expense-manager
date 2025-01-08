@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Middleware\CheckUserRole;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -14,6 +15,11 @@ Route::get('/', function () {
     ]);
 });
 
+Route::middleware(['auth', 'role:Admin'])->group(function () {
+    Route::get('/admin/dashboard', function () {
+        return view('admin.dashboard');
+    })->name('admin.dashboard');
+});
 
 Route::middleware([\App\Http\Middleware\CheckIfAdmin::class])->group(function () {
     Route::get('/admin', function () {

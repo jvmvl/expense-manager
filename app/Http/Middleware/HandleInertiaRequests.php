@@ -36,7 +36,8 @@ class HandleInertiaRequests extends Middleware
                     'id' => $request->user()->id,
                     'name' => $request->user()->name,
                     'email' => $request->user()->email,
-                    'is_admin' => $request->user()->is_admin, // Pass admin status
+                    'is_admin' => $request->user()->is_admin,
+                    'role' => $request->user()->role ? $request->user()->role->name : null, // Fetch the role name
                 ] : null,
             ],
         ]);

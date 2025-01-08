@@ -29,6 +29,13 @@ defineProps({
 
                     <p>Manage your expenses and budget here.</p>
 
+                    <button
+                        v-if="['Admin', 'Editor'].includes($page.props.auth.user.role.name)"
+                        type="button" class="btn btn-primary"
+                    >
+                        Edit
+                    </button>
+
                 </div>
             </div>
         </div>
