@@ -29,12 +29,8 @@ defineProps({
 
                     <p>Manage your expenses and budget here.</p>
 
-                    <p>Your role is : <b>{{$page.props.auth.user.role.name }}</b></p>
-
-                    <button
-                        v-if="['Admin', 'Editor'].includes($page.props.auth.user.role.name)"
-                        type="button" class="btn btn-primary"
-                    >
+                    <button v-if="['Admin', 'Editor'].includes($page.props.auth.user.role.name)" 
+                        type="button" class="btn btn-primary">
                         Edit
                     </button>
 
