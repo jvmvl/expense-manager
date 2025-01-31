@@ -92,8 +92,8 @@
 - [x] **Day 4**: 📝 Build the expense management model and CRUD operations.
 - [x] **Day 5**: 🔐 Set up authentication (login/register) using Laravel Breeze.
 - [x] **Day 6**: 🛡️ Learn about middleware and create custom authentication middleware.
-- [ ] **Day 7**: 🏷️ Implement user roles and permissions (optional).
-- [ ] **Day 8**: 🖼️ Set up Vue.js in your Laravel project.
+- [x] **Day 7**: 🏷️ Implement user roles and permissions (optional).
+- [x] **Day 8**: 🖼️ Set up Vue.js in your Laravel project.
 - [ ] **Day 9**: 🧩 Learn Vue.js components and structure.
 - [ ] **Day 10**: 📋 Create an expense list and add expense functionality.
 - [ ] **Day 11**: ✏️ Add edit and 🗑️ delete expense features.

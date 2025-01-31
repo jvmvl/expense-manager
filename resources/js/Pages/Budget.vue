@@ -1,16 +1,23 @@
 <script setup>
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout.vue';
 import { Head } from '@inertiajs/vue3';
+import PrimaryButton from '@/Components/PrimaryButton.vue';
 
+defineProps({
+    auth: {
+        type: Object,
+        required: true,
+    }
+});
 </script>
 
 <template>
-    <Head title="Admin" />
+    <Head title="Budget" />
 
     <AuthenticatedLayout :auth="auth">
         <template #header>
             <h2 class="text-xl font-semibold leading-tight text-gray-800">
-                Dashboard
+                Budget
             </h2>
         </template>
 
@@ -19,9 +26,9 @@ import { Head } from '@inertiajs/vue3';
                 <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
                     
                     <div class="m-10 text-gray-900">
-                        <h1>Welcome to the Admin Dashboard</h1>
+                        Budget Page
                     </div>
-
+                    
                 </div>
             </div>
         </div>
